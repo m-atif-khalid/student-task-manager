@@ -1,16 +1,36 @@
-# Student Task Manager – User Guide
 
-## Start the application
-Open a terminal in the project directory and run:
+# Student Task Manager - User Guide
 
-`python main.py`
+## Starting the Application
 
-## Menu options
-1. **Add Task:** Enter a title. Empty titles are rejected.
-2. **Display Tasks:** View each task's ID, title, and Pending/Completed status.
-3. **Complete Task:** Enter the ID of the task to mark it completed.
-4. **Delete Task:** Enter the ID of the task to remove.
-5. **Exit:** Close the application.
+Run this command:
 
-## Notes
-Task IDs are assigned automatically. Tasks are stored in memory and are cleared when the program exits.
+python main.py
+
+## Available Options
+
+1. Add Task:
+Enter a task title to create a new task.
+
+2. Display Tasks:
+View all tasks with their IDs and statuses.
+
+3. Complete Task:
+Enter a task ID to mark it completed.
+
+4. Delete Task:
+Enter a task ID to remove a task.
+
+5. Exit:
+Close the application.
+
+## Testing
+
+Run automated tests using:
+
+python -m unittest discover -s tests -v
+
+## Note
+
+Tasks are stored in memory and are cleared
+when the application exits.
