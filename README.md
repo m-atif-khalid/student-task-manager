@@ -34,4 +34,4 @@ The workflow in `.github/workflows/python-tests.yml` runs the unit tests on push
 This project is licensed under the MIT License.
 
 ## Project Status
-Project status: Planning
+Project status: In Development
