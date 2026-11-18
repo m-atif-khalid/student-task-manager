@@ -39,3 +39,16 @@ class TaskManager:
             if task["id"] == task_id:
                 return task
         return None
+    def add_task(self, title):
+    if not isinstance(title, str) or not title.strip():
+        raise ValueError("Task title cannot be empty.")
+
+    task = {
+        "id": self.next_id,
+        "title": title.strip(),
+        "completed": False
+    }
+
+    self.tasks.append(task)
+    self.next_id += 1
+    return task
