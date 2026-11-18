@@ -39,3 +39,11 @@ class TaskManager:
             if task["id"] == task_id:
                 return task
         return None
+    def delete_task(self, task_id):
+    task = self._find_task(task_id)
+
+    if task is None:
+        return False
+
+    self.tasks.remove(task)
+    return True
