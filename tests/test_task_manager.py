@@ -7,8 +7,7 @@ class TestTaskManager(unittest.TestCase):
 
     def test_add_task(self):
         task = self.manager.add_task("Read chapter 1")
-        #self.assertEqual(task["title"], "Read chapter 1")
-        self.assertEqual(task["title"], "Wrong Title")
+        self.assertEqual(task["title"], "Read chapter 1")
         self.assertFalse(task["completed"])
         self.assertEqual(len(self.manager.get_tasks()), 1)
 
